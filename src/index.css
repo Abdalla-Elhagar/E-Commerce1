@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.testimonials .slick-slide>div {
+    display: flex !important;
+    justify-content: space-between !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    transform: translateX(-50px);
+    width: 400px !important;
+
+    
+}
+@media screen {
+    
+}
+@media(max-width:640px) {
+    .landing .slick-slide>div>div {
+        display: flex !important;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-content: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    
+.testimonials .slick-slide>div {
+    width: 90% !important;
+}
+
+
+}
+li {
+    cursor: pointer;
+}
+
+.testimonials .slick-slide>div>div {
+    width:400px !important;
+}
+.testimonials .slick-slide {
+    margin: 0 0 50px 0;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    justify-content: space-around !important; 
+    
+}
