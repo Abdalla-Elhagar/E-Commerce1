@@ -4,6 +4,10 @@ import { motion } from "framer-motion";
 import { FaCaretDown } from "react-icons/fa";
 import { useState } from "react";
 import Form from "./form";
+import { IoIosCart } from "react-icons/io";
+import { IoMdSearch } from "react-icons/io";
+
+
 
 const menu = [
     {
@@ -57,12 +61,13 @@ export default function NavBar(){
                 </motion.div>
                 <div className="right flex gap-3 items-center">
                     <motion.div transition={{duration:0.5,delay:1.2}} initial={{y:-30,opacity:0}} animate={{y:0,opacity:1}} className="searchBar  max-sm:hidden h-8 group relative">
-                        <i className="searchIcon group-hover:text-secondary text-xs text-gray-400 fa-solid fa-magnifying-glass absolute right-3 top-1/2 translate-y-[-50%]"></i>
+                        <IoMdSearch className="searchIcon group-hover:text-secondary text-xl text-gray-400 absolute right-3 top-1/2 translate-y-[-50%]" />
                         <input className="border transition-all duration-300 w-[200px] sm:w-[200px] group-hover:w-[300px] h-8 border-gray-200 dark:border-gray-500 dark:bg-slate-800 rounded-full px-2 py-0.5 focus:border-primary focus:outline-none" type="text" placeholder="search" />
                     </motion.div>
                     <motion.div onClick={open} transition={{duration:0.5,delay:1.5}} initial={{y:-30,opacity:0}} animate={{y:0,opacity:1}} className="order group hover:h-8 hover:py-2 bg-secondary flex px-4 py-1.5 text-white rounded-full h-7">
                         <div className="text group-hover:block text-md mt-[-4px] mr-2 hidden">Order</div>
-                        <i className="fa-solid fa-cart-shopping text-lg"></i>
+                        <IoIosCart className="text-xl" />
+
                         
 
                     </motion.div>
